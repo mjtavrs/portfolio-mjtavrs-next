@@ -15,6 +15,9 @@ const config: Config = {
         "light-gray": "#403d39",
         "light-white": "#fffcf2",
         "orange": "#ffa500"
+      },
+      screens: {
+        "sm": "350px",
       }
     },
   },

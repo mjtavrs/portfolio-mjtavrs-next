@@ -1,5 +1,15 @@
+import Header from "@/components/header/Header"
+
 export default function Home() {
   return (
-    <h1>página de portfólio</h1>
+    <>
+      <Header />
+      <p>hero rápido</p>
+      <p>botões de contato</p>
+      <p>tecnologias</p>
+      <p>projetos</p>
+      <p>formulário de contato rápido</p>
+      <p>footer</p>
+    </>
   );
 }
