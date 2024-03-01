@@ -1,15 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import logoWhite from "../../assets/svg/logo_white.svg";
 import Menu from "./menuHamburguer/menuHamburguer";
 
 export default function Header() {
     return (
         <header className="flex items-center sm:justify-between sm:py-3 sm:px-6 bg-black text-md text-beige">
             <Image
-                src={logoWhite}
+                src={"/assets/svg/logo_white.svg"}
                 alt="Logo oficial do portfólio de Marcos Tavares"
+                width="120"
+                height="0"
             />
             <nav className="sm:hidden">
                 <ul className="flex gap-8">
