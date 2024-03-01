@@ -52,8 +52,8 @@ export default function Menu() {
                         transition={{ duration: 0.3 }}
                     >
                         <ul className="flex flex-col gap-2 items-center text-black">
-                            <li className="pb-2 border-b-[1px] border-lighter-gray"><Link href="#habilidades">Habilidades</Link></li>
-                            <li className="pb-2 border-b-[1px] border-lighter-gray"><Link href="#projetos">Projetos</Link></li>
+                            <li className="pb-2 border-b-[1px] border-lighter-gray"><Link href="#skills">Habilidades</Link></li>
+                            <li className="pb-2 border-b-[1px] border-lighter-gray"><Link href="#projects">Projetos</Link></li>
                             <li><Link href="curriculum">Currículo</Link></li>
                         </ul>
                     </motion.div>

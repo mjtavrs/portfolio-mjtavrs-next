@@ -12,14 +12,16 @@ export default function Header() {
                 width="120"
                 height="0"
             />
-            <nav className="sm:hidden">
-                <ul className="flex gap-8">
-                    <li><Link href="#">Habilidades</Link></li>
-                    <li><Link href="#">Projetos</Link></li>
-                    <li><Link href="#">Currículo</Link></li>
+            <nav className="sm:hidden md:inline">
+                <ul className="flex gap-10">
+                    <li><Link href="#skills">Habilidades</Link></li>
+                    <li><Link href="#projects">Projetos</Link></li>
+                    <li><Link href="curriculum">Currículo</Link></li>
                 </ul>
             </nav>
-            <Menu />
+            <div className="md:hidden">
+                <Menu />
+            </div>
             <Link
                 href="#"
                 className="sm:hidden md:inline py-2 px-4 bg-orange rounded-lg text-black uppercase font-bold"
