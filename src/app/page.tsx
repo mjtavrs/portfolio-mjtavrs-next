@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
       <p>tecnologias</p>
       <p>projetos</p>
       <p>formulário de contato rápido</p>
-      <p>footer</p>
+      <Footer />
     </>
   );
 }
