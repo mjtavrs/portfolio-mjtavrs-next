@@ -7,7 +7,7 @@ import { IoLogoJavascript } from "react-icons/io";
 export default function TechnologiesContainer() {
     return (
         <section
-            className="py-2 px-4 flex gap-3 flex-wrap"
+            className="flex gap-3 flex-wrap"
         >
             <TechnologyCard
                 techSymbol={<IoLogoJavascript />}
