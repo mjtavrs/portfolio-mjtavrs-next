@@ -12,6 +12,7 @@ export default function Home() {
       <Section
         sectionId="skills"
         sectionTitle="Skills"
+        sectionDesc="Conheça meu leque de habilidades e veja se corresponde ao que você procura."
       >
         <TechnologiesContainer />
       </Section>
