@@ -7,7 +7,7 @@ type Props = {
 
 export default function TechnologyCard({ techSymbol, techTitle }: Props) {
     return (
-        <div className="bg-white sm:min-w-[48%] px-3 py-6 flex flex-col gap-2 items-center text-black border-2 border-black rounded-md">
+        <div className="bg-light-beige sm:min-w-[48%] px-3 py-6 flex flex-col gap-2 items-center text-black border-2 border-black rounded-md">
             <div className="text-4xl">
                 {techSymbol}
             </div>
