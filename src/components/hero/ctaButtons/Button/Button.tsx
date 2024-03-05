@@ -6,16 +6,16 @@ type Props = {
     buttonIcon: ReactNode,
     buttonLink: string,
     buttonTitle: string,
-    buttonTitleColor: string,
     buttonDesc: string
 }
 
-export default function Button({ buttonColor, buttonIcon, buttonLink, buttonTitle, buttonTitleColor, buttonDesc }: Props) {
+export default function Button({ buttonColor, buttonIcon, buttonLink, buttonTitle, buttonDesc }: Props) {
     return (
         <Link
             href={buttonLink}
             title={buttonDesc}
-            className={`bg-${buttonColor} flex items-center gap-2 w-fit px-5 py-1 text-${buttonTitleColor} rounded-md`}
+            className={`bg-${buttonColor} flex items-center gap-2 w-fit px-5 py-1 rounded-md`}
+            target="_blank"
         >
             {buttonIcon}
             <h3 className="font-semibold uppercase">{buttonTitle}</h3>
