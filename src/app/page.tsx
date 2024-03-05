@@ -16,8 +16,13 @@ export default function Home() {
       >
         <TechnologiesContainer />
       </Section>
-      <p>projetos virão aqui</p>
-      <p>projetos</p>
+      <Section
+        sectionId="projects"
+        sectionTitle="Projetos"
+        sectionDesc="Abaixo você poderá ver os projetos que desenvolvi na minha jornada de tecnologia."
+      >
+        <TechnologiesContainer />
+      </Section>
       <p>formulário de contato rápido</p>
       <Footer />
     </>

@@ -23,8 +23,8 @@ export default function Hero() {
                         buttonColor="black"
                         buttonIcon={< FaGithub />}
                         buttonLink="https://github.com/mjtavrs"
-                        buttonTitle="Meu Github"
-                        buttonDesc="Acesse meu portfólio no Github"
+                        buttonTitle="Meus Repositórios"
+                        buttonDesc="Acesse meus repositórios no Github"
                     />
                 </div>
             </div>

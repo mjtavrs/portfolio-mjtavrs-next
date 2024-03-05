@@ -18,7 +18,7 @@ export default function Button({ buttonColor, buttonIcon, buttonLink, buttonTitl
             target="_blank"
         >
             {buttonIcon}
-            <h3 className="font-semibold uppercase">{buttonTitle}</h3>
+            <h3 className="font-medium">{buttonTitle}</h3>
         </Link>
     );
 }
