@@ -13,8 +13,7 @@ const config: Config = {
         "light-beige": "#faf7f0",
         "black": "#252422",
         "lighter-gray": "#dcdcdc",
-        "light-gray": "#403d39",
-        "light-white": "#fffcf2",
+        "light-gray": "#4a4948",
         "orange": "#ffa500"
       },
       screens: {

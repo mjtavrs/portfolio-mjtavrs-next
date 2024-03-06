@@ -1,23 +1,26 @@
 import Image, { StaticImageData } from "next/image";
 import { ReactNode } from "react";
 
-import { FaSass, FaReact, FaGit, FaNodeJs, FaDocker, FaAws } from "react-icons/fa6";
 import RepoButton from "./projectButtons/repoButton/RepoButton";
+import DeployButton from "./projectButtons/deployButton/DeployButton";
 
 type Props = {
-    // projectCover: StaticImageData,
-    // technologiesUsed: Array<ReactNode>,
+    projectCover: string,
+    technologiesUsed: Array<ReactNode>,
     projectTitle: string,
-    projectDesc: string
+    projectDesc: string,
+    projectRepoPrivacy: boolean,
+    projectRepoTitle: string,
+    projectDeployLink: string
 }
 
-export default function ProjectCard({ projectTitle, projectDesc }: Props) {
+export default function ProjectCard({ projectCover, technologiesUsed, projectTitle, projectDesc, projectRepoPrivacy, projectRepoTitle, projectDeployLink }: Props) {
     return (
-        <div className="bg-light-beige w-80 border-[1px] border-black rounded-md">
+        <div className="bg-light-beige w-80 border-2 border-black rounded-md">
             <Image
-                src="https://placehold.co/320x400"
-                alt=""
-                title=""
+                src={projectCover}
+                alt="Cover do projeto"
+                title={projectTitle}
                 height="0"
                 width="320"
                 className="rounded-t-md"
@@ -26,9 +29,11 @@ export default function ProjectCard({ projectTitle, projectDesc }: Props) {
                 <div className="pb-3 flex items-center gap-2 text-black">
                     <h4>Tecnologias usadas:</h4>
                     <div className="flex flex-wrap flex-1 gap-1 text-2xl">
-                        <FaSass />
-                        <FaReact />
-                        <FaNodeJs />
+                        {[
+                            technologiesUsed
+                        ].map((technology) => (
+                            technology
+                        ))}
                     </div>
                 </div>
                 <div>
@@ -37,10 +42,14 @@ export default function ProjectCard({ projectTitle, projectDesc }: Props) {
                     </div>
                     <p className="pt-3 pb-5">{projectDesc}</p>
                 </div>
-                <div>
+                <div className="flex justify-around">
                     <RepoButton
-                        isPrivate={true}
-                        repoTitle="Maribe Arquitetura"
+                        isPrivate={projectRepoPrivacy}
+                        repoTitle={projectRepoTitle}
+                    />
+                    <DeployButton
+                        deployLink={projectDeployLink}
+                        projectTitle={projectRepoTitle}
                     />
                 </div>
             </div>

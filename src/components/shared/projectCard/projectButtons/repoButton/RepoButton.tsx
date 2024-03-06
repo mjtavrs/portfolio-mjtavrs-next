@@ -9,12 +9,15 @@ type Props = {
 
 export default function RepoButton({ isPrivate, repoTitle }: Props) {
     return (
-        <div className="bg-light-gray">
+        <div className="bg-light-gray max-w-[48%] rounded-md">
             <Link
                 href="#"
                 title={isPrivate ? "Repositório privado" : `Repositório do(a) ${repoTitle}`}
                 aria-disabled={isPrivate}
-                className={isPrivate ? "pointer-events-none" : "bg-black text-beige"}
+                className={isPrivate ?
+                    "p-2 w-fit flex gap-2 items-center font-medium text-beige pointer-events-none" :
+                    "p-2 w-fit flex gap-2 items-center font-medium text-beige"
+                }
             >
                 < FaGithub />
                 Repositório
