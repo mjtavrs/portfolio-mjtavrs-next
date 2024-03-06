@@ -26,6 +26,7 @@ export default function Home() {
       >
         <ProjectsContainer />
       </Section>
+      <p>certificações virão aqui</p>
       <p>formulário de contato rápido vem aqui</p>
       <Footer />
     </>
