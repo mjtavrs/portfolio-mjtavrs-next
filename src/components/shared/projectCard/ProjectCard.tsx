@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { ReactNode } from "react";
 
 import RepoButton from "./projectButtons/repoButton/RepoButton";
@@ -24,12 +24,12 @@ export default function ProjectCard({ projectCover, technologiesUsed, projectTit
                 title={projectTitle}
                 height="0"
                 width="320"
-                className="rounded-t-md"
+                className="border-b-2 border-black rounded-t-md"
             />
             <div className="py-4 px-5">
                 <div className="pb-3 flex items-center gap-2 text-black">
                     <h4>Tecnologias usadas:</h4>
-                    <div className="flex flex-wrap flex-1 gap-1 text-2xl">
+                    <div className="flex flex-wrap flex-1 gap-[5px] text-2xl">
                         {[
                             technologiesUsed
                         ].map((technology) => (
@@ -41,7 +41,7 @@ export default function ProjectCard({ projectCover, technologiesUsed, projectTit
                     <div className="py-3 border-y-[1px] border-lighter-gray">
                         <h3 className="font-medium text-lg text-center">{projectTitle}</h3>
                     </div>
-                    <p className="pt-3 pb-5">{projectDesc}</p>
+                    <p className="pt-3 pb-5 text-center">{projectDesc}</p>
                 </div>
                 <div className="flex justify-around">
                     <RepoButton
