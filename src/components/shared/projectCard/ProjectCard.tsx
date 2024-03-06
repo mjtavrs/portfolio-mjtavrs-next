@@ -11,10 +11,11 @@ type Props = {
     projectDesc: string,
     projectRepoPrivacy: boolean,
     projectRepoTitle: string,
+    projectRepoLink: string,
     projectDeployLink: string
 }
 
-export default function ProjectCard({ projectCover, technologiesUsed, projectTitle, projectDesc, projectRepoPrivacy, projectRepoTitle, projectDeployLink }: Props) {
+export default function ProjectCard({ projectCover, technologiesUsed, projectTitle, projectDesc, projectRepoPrivacy, projectRepoTitle, projectRepoLink, projectDeployLink }: Props) {
     return (
         <div className="bg-light-beige w-80 border-2 border-black rounded-md">
             <Image
@@ -46,6 +47,7 @@ export default function ProjectCard({ projectCover, technologiesUsed, projectTit
                     <RepoButton
                         isPrivate={projectRepoPrivacy}
                         repoTitle={projectRepoTitle}
+                        repoLink={projectRepoLink}
                     />
                     <DeployButton
                         deployLink={projectDeployLink}
