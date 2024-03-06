@@ -1,3 +1,4 @@
+import CertificationsContainer from "@/components/certificationsContainer/CertificationsContainer";
 import TechnologiesContainer from "@/components/tenchnologiesContainer/technologiesContainer";
 import ProjectsContainer from "@/components/projectsContainer/ProjectsContainer";
 import Services from "@/components/services/Services";
@@ -25,6 +26,13 @@ export default function Home() {
         sectionDesc="Abaixo você poderá ver os projetos que desenvolvi na minha jornada de tecnologia."
       >
         <ProjectsContainer />
+      </Section>
+      <Section
+        sectionId="certifications"
+        sectionTitle="Certificações"
+        sectionDesc="Aqui você poderá conhecer minhas certificações, além de uma breve explicação sobre as mesmas."
+      >
+        <CertificationsContainer />
       </Section>
       <p>certificações virão aqui</p>
       <p>formulário de contato rápido vem aqui</p>
