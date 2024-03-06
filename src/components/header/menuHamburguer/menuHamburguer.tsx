@@ -54,6 +54,7 @@ export default function Menu() {
                         <ul className="flex flex-col gap-2 items-center text-black">
                             <li className="pb-2 border-b-[1px] border-lighter-gray"><Link href="#skills">Habilidades</Link></li>
                             <li className="pb-2 border-b-[1px] border-lighter-gray"><Link href="#projects">Projetos</Link></li>
+                            <li className="pb-2 border-b-[1px] border-lighter-gray"><Link href="#certifications">Certificações</Link></li>
                             <li><Link href="curriculum">Currículo</Link></li>
                         </ul>
                     </motion.div>

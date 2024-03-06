@@ -1,15 +1,17 @@
+import TechnologiesContainer from "@/components/tenchnologiesContainer/technologiesContainer";
+import ProjectsContainer from "@/components/projectsContainer/ProjectsContainer";
+import Services from "@/components/services/Services";
+import Section from "@/components/section/Section";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import Hero from "@/components/hero/Hero";
-import ProjectsContainer from "@/components/projectsContainer/ProjectsContainer";
-import Section from "@/components/section/Section";
-import TechnologiesContainer from "@/components/tenchnologiesContainer/technologiesContainer";
 
 export default function Home() {
   return (
     <>
       <Header />
       <Hero />
+      <Services />
       <Section
         sectionId="skills"
         sectionTitle="Skills"
@@ -24,7 +26,7 @@ export default function Home() {
       >
         <ProjectsContainer />
       </Section>
-      <p>formulário de contato rápido</p>
+      <p>formulário de contato rápido vem aqui</p>
       <Footer />
     </>
   );
